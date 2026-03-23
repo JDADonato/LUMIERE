@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Señorita Rica Enhanced</title>
+    <link rel="icon" href="data:,">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="glass-nav">
+        <div class="logo" style="cursor:pointer">Señorita Rica.</div>
+        <div class="nav-links">
+            <button id="nav-btn-home" class="nav-btn btn-secondary">Home</button>
+            <button id="nav-btn-dash" class="nav-btn btn-green hidden" style="margin-left:0.5rem">My Table</button>
+            <button id="nav-btn-staff" title="Staff Gateway" style="color: #000 !important; font-size: 1.25rem; background: transparent; border: none; cursor: pointer; padding: 0.5rem;"><i class="fa-solid fa-lock" style="color: #000 !important;"></i></button>
+        </div>
+    </nav>
+
+    <!-- TOAST NOTIFICATIONS container -->
+    <div id="toast-container"></div>
+
+    <!-- 1. Landing Page -->
+    <section id="view-landing" class="view active" style="padding:0; max-width:100%;">
+        <div class="hero" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.7)), url('home_banner.png'); background-size: cover; background-position: center; height: 100vh;">
+            <div class="hero-content">
+                <h1>Señorita Rica</h1>
+                <p class="subtitle">Experience Antipolo's Premier Dining</p>
+                <div class="capacity-banner" id="live-capacity-banner">
+                    <span class="indicator-dot pulse"></span> Live Capacity: <strong id="cap-status">Available</strong>
+                </div>
+                <p class="hours">Open Daily: 7:00 AM - 3:00 AM</p>
+                <div class="cta-group">
+                    <button class="btn-green" id="btn-cta-book">Book a Table</button>
+                    <button class="btn-black hidden" id="btn-cta-continue" style="border:1px solid var(--color-banana-yellow); color:var(--color-banana-yellow)">Continue Table Session</button>
+                    <button class="btn-green" style="background:transparent; border:2px solid var(--color-leaf-green); color:white;" id="btn-cta-menu">View Menu</button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Experiences Showcase -->
+        <div style="max-width: 1400px; margin: 5rem auto; padding: 0 2rem;">
+            <div style="text-align:center; max-width:800px; margin: 0 auto 4rem auto;">
+                <h2 style="font-family:var(--font-heading); font-size:2.8rem; color:var(--text-black-serif); margin-bottom: 1rem; letter-spacing: -0.5px;">Elevated Dining, Authentically Local</h2>
+                <p style="color:#64748b; font-size:1.15rem; line-height:1.6; font-weight:400;">Immerse yourself in our curated environments. From intimate sunset dates overlooking the Antipolo skyline to lively weekend celebrations with family.</p>
+            </div>
+            
+            <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 3rem;">
+                
+                <!-- Feature 1 -->
+                <div class="card" style="text-align:center; padding: 3rem 2rem; border-top: 4px solid var(--color-leaf-green); display:flex; flex-direction:column; align-items:center;">
+                    <div style="width:70px; height:70px; background:#f0fdf4; color:var(--color-leaf-green); border-radius:50%; display:flex; align-items:center; justify-content:center; font-size:2rem; margin-bottom:1.5rem;">
+                        <i class="fa-solid fa-bowl-rice"></i>
+                    </div>
+                    <h3 style="font-family:var(--font-heading); font-size:1.6rem; color:var(--text-black-serif); margin:0 0 1rem 0;">Signature Boodle Fights</h3>
+                    <p style="color:#64748b; font-size:1.05rem; line-height:1.6; margin:0">Gather your family around our classic Bilao Boodles. Featuring premium grilled meats, fresh local seafood, and unlimited steamed rice served traditionally.</p>
+                </div>
+
+                <!-- Feature 2 -->
+                <div class="card" style="text-align:center; padding: 3rem 2rem; border-top: 4px solid var(--color-banana-yellow); display:flex; flex-direction:column; align-items:center;">
+                    <div style="width:70px; height:70px; background:#fffbeb; color:#d97706; border-radius:50%; display:flex; align-items:center; justify-content:center; font-size:2rem; margin-bottom:1.5rem;">
+                        <i class="fa-solid fa-wind"></i>
+                    </div>
+                    <h3 style="font-family:var(--font-heading); font-size:1.6rem; color:var(--text-black-serif); margin:0 0 1rem 0;">Scenic Al Fresco</h3>
+                    <p style="color:#64748b; font-size:1.05rem; line-height:1.6; margin:0">Request our exclusive outdoor seating environments through the Smart Reservation portal. Enjoy the cool hillside breeze and sweeping panoramic twilight views.</p>
+                </div>
+
+                <!-- Feature 3 -->
+                <div class="card" style="text-align:center; padding: 3rem 2rem; border-top: 4px solid var(--text-black-serif); display:flex; flex-direction:column; align-items:center;">
+                    <div style="width:70px; height:70px; background:#f1f5f9; color:var(--text-black-serif); border-radius:50%; display:flex; align-items:center; justify-content:center; font-size:2rem; margin-bottom:1.5rem;">
+                        <i class="fa-solid fa-guitar"></i>
+                    </div>
+                    <h3 style="font-family:var(--font-heading); font-size:1.6rem; color:var(--text-black-serif); margin:0 0 1rem 0;">Live Acoustic Weekends</h3>
+                    <p style="color:#64748b; font-size:1.05rem; line-height:1.6; margin:0">Book a table in our vibrant Entertainment Zone. Every Friday and Saturday features curated live acoustic jazz and premier local vocalists.</p>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Social Proof / Testimonials -->
+        <div style="max-width: 1400px; margin: 4rem auto 6rem auto; padding: 0 2rem;">
+            <div style="text-align:center; margin-bottom: 3rem;">
+                <h2 style="font-family:var(--font-heading); font-size:2.2rem; color:var(--text-black-serif); margin-bottom: 0.5rem; letter-spacing: -0.5px;">Guest Stories</h2>
+                <div style="color:var(--color-banana-yellow); font-size:1.5rem;"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+            </div>
+            
+            <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
+                <!-- Review 1 -->
+                <div class="card" style="padding:2rem; position:relative; overflow:hidden;">
+                    <i class="fa-solid fa-quote-right" style="position:absolute; top:-10px; right:-10px; font-size:6rem; color:#f8fafc; opacity:0.5;"></i>
+                    <p style="font-style:italic; color:#475569; font-size:1.1rem; line-height:1.7; position:relative; z-index:2;">"The Boodle Fight was absolutely staggering. Authentic flavors, massive portions, and looking out over the Antipolo sunset made it the perfect anniversary dinner."</p>
+                    <div style="margin-top:1.5rem; display:flex; gap:1rem; align-items:center; position:relative; z-index:2;">
+                        <div style="width:40px; height:40px; background:#e2e8f0; border-radius:50%; display:flex; align-items:center; justify-content:center; font-weight:700;">MC</div>
+                        <div><div style="font-weight:700;">Maria C.</div><div style="font-size:0.8rem; color:#94a3b8;">Local Guide</div></div>
+                    </div>
+                </div>
+                <!-- Review 2 -->
+                <div class="card" style="padding:2rem; position:relative; overflow:hidden;">
+                    <i class="fa-solid fa-quote-right" style="position:absolute; top:-10px; right:-10px; font-size:6rem; color:#f8fafc; opacity:0.5;"></i>
+                    <p style="font-style:italic; color:#475569; font-size:1.1rem; line-height:1.7; position:relative; z-index:2;">"Ordering via the digital interactive menu at the table felt so premium. Service was flawless, and the signature espresso hit exactly the right spot."</p>
+                    <div style="margin-top:1.5rem; display:flex; gap:1rem; align-items:center; position:relative; z-index:2;">
+                        <div style="width:40px; height:40px; background:#e2e8f0; border-radius:50%; display:flex; align-items:center; justify-content:center; font-weight:700;">DL</div>
+                        <div><div style="font-weight:700;">Dan Lester</div><div style="font-size:0.8rem; color:#94a3b8;">Verified Diner</div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- 2. Smart Reservation -->
+    <section id="view-reservation" class="view hidden">
+        <div class="card card-wide">
+            <h2>Interactive Reservation & Zoning</h2>
+            <div class="res-layout">
+                <form id="reservation-form" class="res-form">
+                    <input type="text" id="res-name" placeholder="Name" required>
+                    <input type="tel" id="res-phone" placeholder="Phone Number" required>
+                    <input type="date" id="res-date" required>
+                    <input type="time" id="res-time" required>
+                    <input type="number" id="res-size" placeholder="Party Size" min="1" required>
+
+                    <div id="selected-table-display" style="padding: 1rem; background: #fafafa; border:1px solid #ddd; border-radius: 8px; margin-bottom: 1rem; font-weight: 600; text-align: center; transition: all 0.3s; font-size:0.95rem">
+                        No Table Selected. Please tap an available table below.
+                    </div>
+                    <input type="hidden" id="res-selected-table" required>
+                    <input type="hidden" id="res-selected-zone" required>
+
+                    <div class="policies">
+                        <label><input type="checkbox" id="pol-sc" required> I agree to the mandatory <span id="policy-sc-rate">10</span>% Service Charge.</label>
+                        <label><input type="checkbox" id="pol-limit" required> I accept the strict 2-Hour Table Limit.</label>
+                    </div>
+
+                    <button type="submit" class="btn-green" id="btn-submit-res" style="width:100%;" disabled>Lock Reservation & Confirm</button>
+                </form>
+                
+                <div class="res-map">
+                    <h3>Digital Floor Plan</h3>
+                    <p style="font-size:0.9rem; color:#666; margin-bottom:0.5rem">Tap any green table to instantly select your seating preference.</p>
+                    <div style="display:flex; gap:1rem; margin-bottom: 1rem; font-size: 0.85rem; justify-content:center;">
+                        <span style="display:flex; align-items:center; gap:0.4rem"><div style="width:14px; height:14px; border:2px solid var(--color-leaf-green); border-radius:4px;"></div> Available</span>
+                        <span style="display:flex; align-items:center; gap:0.4rem"><div style="width:14px; height:14px; background:#f5f5f5; border:1px solid #eee; border-radius:4px;"></div> Occupied</span>
+                        <span style="display:flex; align-items:center; gap:0.4rem"><div style="width:14px; height:14px; background:var(--text-black-serif); border-radius:4px;"></div> Selected</span>
+                    </div>
+                    <div class="map-grid" id="customer-floor-map">
+                        <!-- JS renders visual mockup -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. Interactive Menu -->
+    <section id="view-menu" class="view hidden">
+        <div>
+            <h2>Authentic Offerings</h2>
+            
+            <div style="position:relative; margin-bottom:2rem; max-width: 600px;">
+                <i class="fa-solid fa-search" style="position:absolute; left:1.25rem; top:50%; transform:translateY(-50%); color:#94a3b8; font-size:1.1rem"></i>
+                <input type="text" id="customer-menu-search" placeholder="Search our signature dishes..." style="width:100%; padding-left:3rem; border:2px solid #e2e8f0; padding-top:1rem; padding-bottom:1rem; padding-right:1rem; border-radius:12px; outline:none; font-family:var(--font-body); font-size:1.05rem; transition: border-color 0.2s">
+            </div>
+
+            <div class="category-filters" id="cat-filters"></div>
+            <div class="menu-grid" id="menu-grid" style="min-height:400px;">
+                <!-- Rendered by JS -->
+            </div>
+            
+            <div id="customer-menu-empty" class="hidden" style="text-align:center; padding:4rem 0; color:#94a3b8;">
+                <i class="fa-solid fa-magnifying-glass" style="font-size:3rem; margin-bottom:1rem; opacity:0.5;"></i>
+                <h3 style="font-size:1.2rem; margin:0;">No matching dishes found.</h3>
+                <p>Try searching for classic keywords like "beef", "sinigang", or "coffee".</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sidebar Cart -->
+    <div id="cart-sidebar" class="sidebar">
+        <div class="sidebar-header">
+            <h2>Your Order</h2>
+            <button id="btn-close-cart" class="btn-close">&times;</button>
+        </div>
+        <div class="cart-items" id="cart-items-container"></div>
+        <div class="cart-summary">
+            <div class="summary-row"><span>Subtotal:</span> <span id="cart-subtotal">PHP 0.00</span></div>
+            <div class="summary-row"><span>Service Charge (<span id="cart-sc-lbl">10</span>%):</span> <span id="cart-sc">PHP 0.00</span></div>
+            <div class="summary-row total"><span>Total:</span> <span id="cart-total">PHP 0.00</span></div>
+            <button class="btn-green" style="width: 100%; margin-top: 1rem;" id="btn-confirm-order" disabled>Submit Direct Order</button>
+        </div>
+    </div>
+
+    <!-- 4. Live Dashboard (Mobile Optimized) -->
+    <section id="view-dashboard" class="view hidden" style="padding:1rem;">
+        <div class="dashboard-mobile card">
+            <h2>Table <span id="dash-table-num"></span></h2>
+            <p><strong><span id="dash-name"></span></strong> | <span id="dash-zone"></span></p>
+            
+            <div class="timer-display">
+                <h2 id="live-timer" class="timer-safe">02:00:00</h2>
+                <div id="timer-sms-warning" class="hidden sms-alert">
+                    ⚠️ SMS Alert Generated: Your table expires in under 15 mins. Please extend or checkout to avoid disruption.
+                </div>
+                <p>Time Limit Remaining</p>
+            </div>
+
+            <div class="bill-breakdown">
+                <h3 style="margin-top:0">Transparent Bill</h3>
+                <div id="dash-bill-items"></div>
+                <hr>
+                <div class="summary-row"><span>Subtotal:</span> <span id="dash-subtotal"></span></div>
+                <div class="summary-row"><span>Service Charge (<span id="dash-sc-rate">10</span>%):</span> <span id="dash-sc"></span></div>
+                <div class="summary-row"><span>Authorized Extensions:</span> <span id="dash-ext"></span></div>
+                <div class="summary-row total"><span>Final Total:</span> <span id="dash-total"></span></div>
+            </div>
+
+            <div class="dash-actions" style="margin-top:1.5rem; display:grid; grid-template-columns:1fr 1fr; gap:1rem;">
+                <button class="btn-secondary" id="btn-order-more">Order More Items</button>
+                <button class="btn-black" id="btn-call-waiter">Bell Waiter 🔔</button>
+                <button class="btn-yellow hidden" id="btn-extend-time" style="grid-column: span 2;">Authorize Extension (+100 PHP)</button>
+                <button class="btn-green" id="btn-checkout" style="grid-column: span 2;">Checkout & Rate</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. QA Survey -->
+    <section id="view-survey" class="view hidden">
+        <div style="max-width: 700px; margin: 0 auto;">
+            <div style="text-align:center; margin-bottom: 2rem;">
+                <h2 style="font-size: 2.2rem; margin-bottom: 0.5rem;">How was your food?</h2>
+                <p style="color: #666; font-size: 1.1rem; margin-top:0">Tap the stars to quickly rate your specific dishes.</p>
+            </div>
+            <form id="qa-form">
+                <div id="qa-items-container" style="display: flex; flex-direction: column; gap: 1.5rem;">
+                    <!-- Rendered by JS -->
+                </div>
+                <div class="card" style="margin-top: 2rem; text-align: center; border: 1px solid #eee;">
+                    <p style="margin-top:0; font-weight:600; font-size:1.1rem">Thank you for dining with Señorita Rica!</p>
+                    <button type="submit" class="btn-black" style="width:100%; padding:1rem; font-size:1.1rem">Submit & Complete Checkout</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Auth Modal -->
+    <div id="staff-auth-modal" class="modal hidden">
+        <div class="card" style="text-align: center; max-width:400px;">
+            <h2>Gateway Access</h2>
+            <p>Enter Role Code implicitly.</p>
+            <input type="password" id="staff-pin" placeholder="PIN" style="text-align:center; width: 100%; margin-bottom: 1rem;">
+            <div style="display:flex; gap:1rem; justify-content:center;">
+                <button class="btn-black" id="btn-staff-login">Login</button>
+                <button class="btn-secondary" id="btn-staff-cancel">Cancel</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Staff & Admin Hub -->
+    <section id="view-staff-hub" class="view hidden" style="max-width:1400px;">
+        <div class="staff-app-bar">
+            <div class="branding">Señorita Rica POS</div>
+            <div class="staff-nav">
+                <button class="active-tab" id="nav-pos">Floor POS</button>
+                <button id="nav-kds">Kitchen Routing</button>
+                <button id="nav-stock">Inventory Tracker</button>
+                <button class="hidden" id="nav-admin">Analytics Hub</button>
+                <button id="nav-logout" style="margin-left:1rem; color:#fca5a5;">Secure Logout</button>
+            </div>
+        </div>
+
+        <!-- 6. Staff POS -->
+        <div id="staff-pos" class="staff-subview active">
+            <h2>Live Floor State-Machine</h2>
+            <div class="floor-legend" style="margin-bottom:1rem; display:flex; gap:1rem; font-size:0.9rem; flex-wrap:wrap">
+                <span style="color:var(--color-leaf-green)">■ Safe</span>
+                <span style="color:var(--color-banana-yellow)">■ Near Expire</span>
+                <span style="color:#ff4d4f">■ Expired</span>
+                <span style="color:#2196F3">■ WAIT CALL</span>
+                <span style="color:#9e9e9e">■ CLEANING</span>
+            </div>
+            <div class="pos-grid" id="floor-grid"></div>
+        </div>
+
+        <!-- 7. Kitchen KDS -->
+        <div id="staff-kds" class="staff-subview hidden kds-dark">
+            <h2>Kitchen Logistics Queue</h2>
+            <div class="kds-layout">
+                <div class="kds-tickets" id="kds-tickets" style="flex:1;"></div>
+            </div>
+        </div>
+
+        <!-- 7b. Stock Management -->
+        <div id="staff-stock" class="staff-subview hidden" style="padding:1rem;">
+            <h2>Librarian Inventory System</h2>
+            <p style="color:#666">Manage real-time availability of menu items across all POS terminals in high-fidelity.</p>
+            <div class="stock-sync-container" id="stock-sync-container"></div>
+        </div>
+
+        <!-- 8. Admin Hub -->
+        <div id="staff-admin" class="staff-subview hidden">
+            <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:2rem;">
+                <h2 style="margin:0;">Management Brain</h2>
+                <button class="btn-black" id="btn-export-pdf" onclick="window.print()"><i class="fa-solid fa-file-pdf" style="margin-right:0.5rem;"></i> Export Analytics PDF</button>
+            </div>
+
+            <div class="admin-grid">
+
+                <!-- Featured Highlight -->
+                <div class="admin-card" style="grid-column: 1 / -1; display:flex; justify-content:space-between; align-items:center; background:var(--text-black-serif); color:white;">
+                    <div>
+                        <h3 style="color:white; border-bottom:1px solid #444;">Live Revenue Trajectory</h3>
+                        <p style="color:#aaa; font-size:0.95rem; margin-bottom:0">Aggregated automatically from historical checked-out sessions.</p>
+                    </div>
+                    <div style="text-align:right">
+                        <h1 style="color:var(--color-leaf-green); margin:0; font-size:3rem; font-family:var(--font-heading); letter-spacing:-1px">PHP <span id="stat-sales">0.00</span></h1>
+                        <p style="margin:0.5rem 0 0 0; color:#888;">Auth Extensions: PHP <span id="stat-fees">0.00</span></p>
+                    </div>
+                </div>
+                
+                <!-- Left Column -->
+                <div class="admin-card">
+                    <h3>AI Inventory Forecasting & QA Trends</h3>
+                    <p style="font-size:0.85rem; color:#666; margin-bottom:1.5rem">Predictive item-level heat map mapped via unified customer granular feedback.</p>
+                    <div id="qa-trends-controls"></div>
+                    <div id="stat-ratings" style="margin-top:1rem; min-height: 200px;"></div>
+                </div>
+
+                <!-- Right Column -->
+                <div style="display:flex; flex-direction:column; gap:2rem;">
+                    
+                    <div class="admin-card">
+                        <h3>Peak Hour Visualization</h3>
+                        <div class="heat-map">
+                            <!-- Simulated CSS heat map blocks -->
+                            <div class="heat-block h-low">7AM</div>
+                            <div class="heat-block h-low">10AM</div>
+                            <div class="heat-block h-med">1PM</div>
+                            <div class="heat-block h-med">4PM</div>
+                            <div class="heat-block h-high">7PM</div>
+                            <div class="heat-block h-high">10PM</div>
+                            <div class="heat-block h-max">1AM</div>
+                        </div>
+                    </div>
+
+                    <div class="admin-card">
+                        <h3>Executive Business Rules</h3>
+                        <p style="font-size:0.85rem; color:#666;">Modify global state execution variables actively mapping onto operations.</p>
+                        
+                        <label style="font-size:0.85rem; font-weight:600;">Overtime Extension Fee (PHP)</label>
+                        <input type="number" id="setting-ext" value="100" style="width:100%; margin-bottom:1rem; border:1px solid #ddd; padding:0.5rem; border-radius:4px;">
+                        
+                        <label style="font-size:0.85rem; font-weight:600;">Mandatory Service Charge Base (%)</label>
+                        <input type="number" id="setting-sc" value="10" style="width:100%; margin-bottom:1.5rem; border:1px solid #ddd; padding:0.5rem; border-radius:4px;">
+
+                        <button class="btn-black" style="width:100%;" id="btn-save-settings"><i class="fa-solid fa-cloud-arrow-up" style="margin-right:0.4rem;"></i> Sync Operations Rules</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modals -->
+    <div id="pos-modal" class="modal hidden">
+        <div class="card" style="min-width:350px;">
+            <h2 style="margin-top:0">Table <span id="pos-modal-num"></span> State</h2>
+            <p><strong><span id="pos-modal-name"></span></strong> | <span id="pos-modal-zone"></span></p>
+            <div id="pos-modal-items" style="margin: 1.5rem 0; overflow-y:auto; border-top:1px solid #eee; border-bottom:1px solid #eee; padding:1rem 0;"></div>
+            <h3 class="total">Running Total: <span id="pos-modal-total"></span></h3>
+            <div style="display:flex; flex-direction:column; gap:1rem; margin-top:2rem">
+                <div style="display:flex; gap:1rem">
+                    <button class="btn-secondary" style="flex:1" id="btn-clear-table">Mark Cleaned & Free Table</button>
+                    <button class="btn-black" style="flex:1" id="btn-close-pos-modal">Close Window</button>
+                </div>
+                <button class="btn-danger" style="width:100%" id="btn-force-end">Force Terminate Session</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Confirm Modal -->
+    <div id="confirm-modal" class="modal hidden">
+        <div class="card" style="text-align: center; max-width:400px; width:90%">
+            <h2 id="confirm-title" style="margin-top:0">Confirm Action</h2>
+            <p id="confirm-msg" style="color:#555">Are you sure?</p>
+            <div style="display:flex; gap:1rem; justify-content:center; margin-top:2rem">
+                <button class="btn-black" id="btn-confirm-yes" style="flex:1">Yes</button>
+                <button class="btn-secondary" id="btn-confirm-no" style="flex:1">Cancel</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Global Footer -->
+    <footer id="global-footer" style="background: var(--text-black-serif); color: #fff; padding: 2.5rem 1rem; text-align: center; font-size: 0.85rem; margin-top: auto; border-top: 5px solid var(--color-leaf-green)">
+        <div style="max-width: 1200px; margin: 0 auto; display: flex; flex-direction: column; gap: 1rem; align-items: center;">
+            <div style="font-family: var(--font-heading); font-size: 1.5rem; font-weight: 800; letter-spacing:-0.5px">Señorita Rica.</div>
+            <p style="color: #aaa; margin: 0; font-size: 0.95rem">Experience Antipolo's Premier Dining &mdash; Authentic Filipino Cuisine</p>
+            <div style="display: flex; gap: 1.5rem; justify-content: center; margin-top: 0.5rem;">
+                <span style="color: #ddd;"><i class="fa-solid fa-phone" style="margin-right:0.3rem"></i> 0917-123-4567</span>
+                <span style="color: #ddd;"><i class="fa-solid fa-map-marker-alt" style="margin-right:0.3rem"></i> Sumulong Hwy, Antipolo, Rizal</span>
+            </div>
+            <div style="border-top: 1px solid rgba(255,255,255,0.1); padding-top: 1.5rem; width: 100%; color: #777; margin-top: 0.5rem; display: flex; justify-content: space-between; flex-wrap: wrap;">
+                <span>&copy; 2026 Señorita Rica. All rights reserved.</span>
+                <span style="display: flex; gap: 1rem;"><a href="#" style="color:#777; text-decoration:none">Privacy Policy</a> <a href="#" style="color:#777; text-decoration:none">Terms of Service</a></span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Digital Receipt Success Modal -->
+    <div id="checkout-modal" class="hidden" style="position:fixed; top:0; left:0; width:100vw; height:100vh; background:rgba(0,0,0,0.6); backdrop-filter:blur(8px); z-index:3000; display:flex; align-items:center; justify-content:center; animation:fadeIn 0.3s ease;">
+        <div class="card" style="max-width:400px; width:90%; text-align:center; padding:3rem 2rem; border-top: 5px solid var(--color-leaf-green);">
+            <div style="width:80px; height:80px; background:#f0fdf4; color:var(--color-leaf-green); border-radius:50%; display:flex; align-items:center; justify-content:center; font-size:2.5rem; margin:0 auto 1.5rem auto;">
+                <i class="fa-solid fa-check"></i>
+            </div>
+            <h2 style="font-size:1.8rem; margin-bottom:0.5rem; color:#0f172a">Order Received!</h2>
+            <p style="color:#64748b; margin-bottom:1.5rem;">Your order has been digitally routed straight to the KDS Kitchen queue.</p>
+            <div style="background:#f8fafc; padding:1.2rem; border-radius:12px; font-weight:700; font-family:var(--font-heading); font-size:1.5rem; color:var(--text-black-serif); margin-bottom:2rem; border:1px dashed #cbd5e1;">
+                ID: #<span id="checkout-order-id">A7X-99</span>
+            </div>
+            <button id="btn-close-checkout" class="btn-green" style="width:100%; font-size:1.1rem;">Return to Menu</button>
+        </div>
+    </div>
+
+    <!-- Floating Cart Action Button -->
+    <button id="fab-cart" class="btn-black hidden" style="position:fixed; bottom:2rem; right:2rem; width:65px; height:65px; border-radius:50%; z-index:900; display:flex; align-items:center; justify-content:center; font-size:1.4rem; box-shadow:0 10px 25px rgba(0,0,0,0.25); transition:transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);">
+        <i class="fa-solid fa-basket-shopping"></i>
+        <span id="fab-cart-badge" style="position:absolute; top:-5px; right:-5px; background:var(--color-danger); color:white; font-size:0.8rem; font-weight:800; min-width:24px; height:24px; border-radius:12px; display:flex; align-items:center; justify-content:center; border:2px solid white">0</span>
+    </button>
+
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,579 @@
+Starter
+French Fries
+P140.00
+
+Cheese Sticks
+P180.00
+
+Tokwa't Baboy
+P250.00
+
+Mangga't Alamang
+P240.00
+
+Nachos
+P280.00
+
+Chicharong Bulaklak
+P280.00
+
+Sizzling Tofu
+P280.00
+
+Dynamite
+P280.00
+
+Sizzling Corn
+P280.00
+
+Sizzling Hotdog
+P280.00
+
+Chicken Skin
+P250.00
+
+Chicken Feet
+P280.00
+
+Solo Meal
+Tapsilog
+P200.00
+
+Tocilog
+P200.00
+
+Hotsilog
+P200.00
+
+Bangsilog
+P200.00
+
+Wings with Rice
+P200.00
+
+Sisig with Rice
+P200.00
+
+2 Stick BBQ with Rice
+P210.00
+
+Inasal with Rice
+P210.00
+
+Rice
+Plain Rice
+P40.00
+
+Plain Rice Bowl
+P140.00
+
+Garlic Rice Bowl
+P150.00
+
+Fried Rice Bowl
+P180.00
+
+Vegetables
+Hototay
+P270.00
+
+Chopsuey
+P270.00
+
+Pakbet
+P270.00
+
+Ampalaya Con Carne
+P270.00
+
+Gising-Gising
+P270.00
+
+Beef
+Bulalo
+P540.00
+
+Sinigang na Baka
+P540.00
+
+Beef Kare-Kare
+P540.00
+
+Steak Bulalo
+P540.00
+
+Kalderetang Baka
+P460.00
+
+Pigar-Pigar
+P400.00
+
+Beef with Youngcorn
+P400.00
+
+Pork
+Crispy Pata
+P740.00
+
+Pork Kare-Kare
+P490.00
+
+Sinigang na Baboy
+P490.00
+
+Pork Sisig
+P290.00
+
+Lechon Kawali
+P390.00
+
+Binagoongan
+P390.00
+
+Pork Adobo
+P390.00
+
+Seafoods
+Sinigang na Salmon Ulo
+P440.00
+
+Sinigang na Hipon
+P440.00
+
+Sinigang na Bangus
+P440.00
+
+Spicy Pusit
+P390.00
+
+Calamares
+P390.00
+
+Garlic Shrimp
+P390.00
+
+Kilawing Tanigue
+P390.00
+
+Daing na Bangus
+P390.00
+
+Fried Hito
+P390.00
+
+Steam Pla-Pla
+P460.00
+
+Sweet & Sour Tilapia
+P460.00
+
+Fried Tilapia
+P450.00
+
+Noodles
+Canton
+P250.00
+
+Bihon
+P250.00
+
+Miki Bihon
+P280.00
+
+Canton Bihon
+P280.00
+
+Lomi
+P280.00
+
+Chicken
+Buttered Chicken
+P590.00
+
+Fried Chicken
+P550.00
+
+Chicken Sisig
+P280.00
+
+Buffalo Wings
+P370.00
+
+Kambing
+Kalderetang Kambing
+P490.00
+
+Adobong Kambing
+P490.00
+
+Kilawing Kambing
+P490.00
+
+Papaitang Kambing
+P490.00
+
+Inihaw
+Pork BBQ
+Serving:
+6 sticks: 390.00
+
+Chicken Inasal
+P290.00
+
+Beef Kebab
+P290.00
+
+Liempo
+P350.00
+
+Pinaputok na Pla-Pla
+P460.00
+
+Bangus
+P420.00
+
+Tilapia
+P350.00
+
+Hito
+P350.00
+
+Pusit
+P350.00
+
+Bilao Boodle
+SB 1
+Good for 4-6 persons: 1,799.00
+
+SB 2
+Good for 4-6 persons: 1,799.00
+
+SB 3
+Good for 8-10 persons: 3,299.00
+
+SB 4
+Good for 8-10 persons: 3,499.00
+
+Breads
+Clubhouse
+P200.00
+
+Tuna Melt
+P180.00
+
+Ham & Cheese Panini
+P180.00
+
+Croffles - Sweet Flavor
+Classic
+P80.00
+
+Cinnamon Sugar
+P90.00
+
+Nutella Alcapone
+P120.00
+
+Nutella Banana
+P120.00
+
+Smores
+P130.00
+
+Blueberry Cream Cheese
+P130.00
+
+Croffles - Savory Flavor
+Pizza
+P150.00
+
+Tuna Garlic Ranch
+P150.00
+
+Chicken Floss
+P130.00
+
+Pork Floss
+P130.00
+
+Cheesy Nori
+P130.00
+
+Coffee
+Americano
+Hot 12oz: 110.00
+Hot 16oz: 125.00
+Iced 16oz: 125.00
+Iced 22oz: 135.00
+
+Cappuccino
+Hot 12oz: 145.00
+Hot 16oz: 160.00
+Iced 16oz: 160.00
+Iced 22oz: 175.00
+
+Cafe Latte
+Hot 12oz: 145.00
+Hot 16oz: 160.00
+Iced 16oz: 160.00
+Iced 22oz: 175.00
+
+Spanish Latte
+Hot 12oz: 150.00
+Hot 16oz: 165.00
+Iced 16oz: 165.00
+Iced 22oz: 180.00
+
+Vanilla
+Hot 12oz: 145.00
+Hot 16oz: 160.00
+Iced 16oz: 160.00
+Iced 22oz: 175.00
+Blended 16oz: 165.00
+Blended 22oz: 180.00
+
+Hazelnut
+Hot 12oz: 145.00
+Hot 16oz: 160.00
+Iced 16oz: 160.00
+Iced 22oz: 175.00
+Blended 16oz: 165.00
+Blended 22oz: 180.00
+
+Cafe Mocha
+Hot 12oz: 150.00
+Hot 16oz: 165.00
+Iced 16oz: 165.00
+Iced 22oz: 180.00
+Blended 16oz: 180.00
+Blended 22oz: 195.00
+
+Caramel Macchiato
+Hot 12oz: 150.00
+Hot 16oz: 165.00
+Iced 16oz: 165.00
+Iced 22oz: 180.00
+Blended 16oz: 180.00
+Blended 22oz: 195.00
+
+Salted Caramel
+Hot 12oz: 150.00
+Hot 16oz: 165.00
+Iced 16oz: 165.00
+Iced 22oz: 180.00
+Blended 16oz: 180.00
+Blended 22oz: 195.00
+
+White Chocolate Mocha
+Hot 12oz: 150.00
+Hot 16oz: 165.00
+Iced 16oz: 165.00
+Iced 22oz: 180.00
+Blended 16oz: 180.00
+Blended 22oz: 195.00
+
+Ade Series
+Lychee Yakult 22oz
+P130.00
+
+Lemon Yakult 22oz
+P130.00
+
+Green Apple Soda 22oz
+P120.00
+
+Blueberry Soda 22oz
+P120.00
+
+Strawberry Soda 22oz
+P120.00
+
+Non-Coffee
+Choco Seno
+Iced 16oz: 175.00
+Iced 22oz: 190.00
+Blended 16oz: 175.00
+Blended 22oz: 190.00
+
+Strawberry Cream
+Iced 16oz: 175.00
+Iced 22oz: 190.00
+Blended 16oz: 175.00
+Blended 22oz: 190.00
+
+Cookies & Cream
+Iced 16oz: 175.00
+Iced 22oz: 190.00
+Blended 16oz: 175.00
+Blended 22oz: 190.00
+
+Matcha
+Iced 16oz: 175.00
+Iced 22oz: 190.00
+Blended 16oz: 175.00
+Blended 22oz: 190.00
+
+Drinks
+Softdrinks 1.5L
+P170.00
+
+Softdrinks Bottle
+P50.00
+
+Sago't Gulaman
+P100.00
+
+Mango Shake
+P170.00
+
+Lychee Shake
+P170.00
+
+Calamansi Juice
+P100.00
+
+Pineapple Juice
+P100.00
+
+Mango Juice
+P100.00
+
+Iced Tea Pitcher
+P120.00
+
+Bottled Water
+P30.00
+
+Blue Lemonade Pitcher
+P120.00
+
+Cucumber Pitcher
+P120.00
+
+Beers
+Pale Pilsen Bottle
+P100.00
+
+Pale Pilsen Bucket
+P590.00
+
+San Mig Light Bottle
+P100.00
+
+San Mig Light Bucket
+P590.00
+
+San Mig Apple Bottle
+P100.00
+
+San Mig Apple Bucket
+P590.00
+
+Red Horse Bottle
+P110.00
+
+Red Horse Bucket
+P650.00
+
+Smirnoff Mule Bottle
+P120.00
+
+Smirnoff Mule Bucket
+P710.00
+
+Heineken Bottle
+P120.00
+
+Heineken Bucket
+P710.00
+
+Liquors
+Jack Daniels 1L
+P3900.00
+
+Black Label 1L
+P3900.00
+
+Jose Cuervo 1L
+P2800.00
+
+Absolut Vodka 1L
+P2500.00
+
+Fundador Light 1L
+P900.00
+
+Alfonso Light 1L
+P900.00
+
+Carlo Rossi 75cl
+P900.00
+
+House Special
+Affogato
+Hot 12oz: 170.00
+Hot 22oz: 190.00
+Iced 16oz: 190.00
+Iced 22oz: 210.00
+Blended 16oz: 210.00
+Blended 22oz: 220.00
+
+Dolce
+Hot 12oz: 170.00
+Hot 22oz: 190.00
+Iced 16oz: 190.00
+Iced 22oz: 210.00
+Blended 16oz: 210.00
+Blended 22oz: 220.00
+
+Biscoff Coffee
+Hot 12oz: 170.00
+Hot 22oz: 190.00
+Iced 16oz: 190.00
+Iced 22oz: 210.00
+Blended 16oz: 210.00
+Blended 22oz: 220.00
+
+Cheesecake Latte
+Hot 12oz: 170.00
+Hot 22oz: 190.00
+Iced 16oz: 190.00
+Iced 22oz: 210.00
+Blended 16oz: 210.00
+Blended 22oz: 220.00
+
+Ube Halaya
+Hot 12oz: 170.00
+Hot 22oz: 190.00
+Iced 16oz: 190.00
+Iced 22oz: 210.00
+Blended 16oz: 210.00
+Blended 22oz: 220.00
+
+Dirty Matcha
+Hot 12oz: 170.00
+Hot 22oz: 190.00
+Iced 16oz: 190.00
+Iced 22oz: 210.00
+Blended 16oz: 210.00
+Blended 22oz: 220.00
+
+Add Ons
+Espresso Shot
+P50.00
+
+Sauce
+P30.00
+
+Syrup
+P30.00
+
+Ade Series - Add Ons
+Coconut Jelly
+P30.00
+
+Popping Boba
+P30.00
+
+Vanilla Ice Cream
+P50.00
